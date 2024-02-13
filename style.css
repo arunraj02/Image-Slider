@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lexend;
+}
+
+#carousel-container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: none;
+    width: 80%;
+}
+
+.slider-content img{
+    width: 100%;
+}
+
+.content1{
+    position: absolute;
+    top: 8rem;
+    padding-left: 36px;
+    color: #fbfbfb;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+.content2{
+    position: absolute;
+    top: 8rem;
+    padding-left: 36px;
+    color: #2f2f2f;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+.slider-content button{
+    padding: 12px 24px;
+    background-color: #fafafa;
+    color: #010101;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 21rem;
+    left: 18rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.slider-content button:hover{
+    background-color: #6154e8;
+    color: #fafafa;
+    transition: 0.4s ease-in-out;
+}
+
+.pre-btn{
+    font-size: 36px;
+    position: absolute;
+    left: 10rem;
+    background-color: transparent;
+    border: none;
+    color: #040404;
+    cursor: pointer;
+}
+
+.next-btn{
+    font-size: 36px;
+    position: absolute;
+    right: 10rem;
+    background-color: transparent;
+    border: none;
+    color: #040404;
+    cursor: pointer;
+}
+
+.dots-container{
+    position: absolute;
+    bottom:16%;
+    left: 44%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dot{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: rgb(217, 217, 217);
+}
+
+.active, .dot:hover{
+    background-color: #646464;
+}
